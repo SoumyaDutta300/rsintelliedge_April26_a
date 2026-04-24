@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RS IntelliEdge | Unified Fraud Network</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+        </style>
+         <link rel="stylesheet" href="style.css">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <div class="hero-banner">
+        <nav>
+            <img src="./images/main_logo2.png" alt="RS" class="logo-img">
+            <div class="nav-links">
+                <a href="#developers">Developers</a>
+                <a href="#who">Who we serve</a>
+                <a href="#components">Components</a>
+                <a href="#insights">Insights</a>
+                <a href="#" class="btn-nav">Book a demo</a>
+            </div>
+        </nav>
+
+        <div class="hero-container">
+            <div class="glass-panel">
+                <div class="badge reveal delay-1">Fraud & AML platform</div>
+                <h1 class="reveal delay-2">The premier unified network for <br><span>real-time fraud interdiction</span></h1>
+                <p class="description reveal delay-3">AI-powered shared intelligence with sub-100ms decisioning. Protecting 300M+ transactions daily.</p>
+                <div class="actions reveal delay-4">
+                    <a href="#" class="btn btn-primary">Book a demo</a>
+                    <a href="#" class="btn btn-secondary">Request sandbox</a>
+                </div>
+                <div class="stats reveal delay-5">
+                    <div class="stat-item"><h2>><span class="counter" data-target="80">0</span>%</h2><p>Detection Rate</p></div>
+                    <div class="stat-item"><h2><<span class="counter" data-target="100">0</span>ms</h2><p>Decisioning</p></div>
+                    <div class="stat-item"><h2><span class="counter" data-target="1200">0</span>+</h2><p>Banks</p></div>
+                    <div class="stat-item"><h2><span class="counter" data-target="99.999" data-decimals="3">0</span>%</h2><p>Uptime</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="infra-section">
+        <div class="infra-header">
+            <span class="small-badge">Strategic Infrastructure</span>
+            <h2>National Payment Backbone</h2>
+            <p>RS IntelliEdge™ integrates directly at the central switch, securing the national rail through shared intelligence and real-time interdiction.</p>
+        </div>
+
+        <div class="infra-visual">
+            <div class="node-card">
+                <img src="./images/npci.png" alt="NPCI" style="max-width: 100px;">
+            </div>
+            <div class="connector">
+                <div class="data-particle"></div>
+            </div>
+            <div class="node-card">
+                <h3 style="color: var(--accent); font-size: 1.8rem;">1,200+</h3>
+                <p style="font-size: 0.6rem; font-weight: 800; text-transform: uppercase; color: var(--subtext);">Members</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="dev-section" id="developers">
+        <div class="dev-container">
+            <div class="dev-content">
+                <span class="small-badge">Developers</span>
+                <h2>Integrate in hours, <br>not months</h2>
+                <p>Connect your infrastructure via REST APIs, webhooks, or native SDKs for Java, Python, and Node.js. Built
+                    for high-throughput payment rails with developer experience in mind.</p>
+                <a href="#" class="dev-link">View Full Documentation →</a>
+            </div>
+    
+            <div class="terminal-wrapper">
+                <div class="terminal-header">
+                    <div class="dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="terminal-title">POST /v1/transactions/score</div>
+                </div>
+                <div class="terminal-body">
+                    <pre><code><span class="t-key">"transaction_id"</span>: <span class="t-val">"txn_8f3k2"</span>,
+    <span class="t-key">"amount"</span>: <span class="t-num">49500.00</span>,
+    <span class="t-key">"channel"</span>: <span class="t-val">"UPI"</span>,
+    <span class="t-key">"payer_vpa"</span>: <span class="t-val">"user@bank"</span></code></pre>
+                    <div class="terminal-divider">// Response: 200 OK (87ms)</div>
+                    <pre><code>{
+      <span class="t-key">"risk_score"</span>: <span class="t-num">0.91</span>,
+      <span class="t-key">"decision"</span>: <span class="t-status-red">"block"</span>,
+      <span class="t-key">"signals"</span>: [<span class="t-val">"velocity_spike"</span>]
+    }</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="impact-section-dark">
+        <div class="container">
+            <div class="impact-header-center">
+                <span class="small-badge reveal">Proven Impact</span>
+                <h2 class="impact-title-main reveal">Battle-tested on <br><span class="text-gradient">Global Payment
+                        Rails</span></h2>
+            </div>
+    
+            <div class="impact-layout-grid">
+                <div class="slider-card-glass reveal delay-1">
+                    <div class="slider-wrapper">
+                        <div class="slider-track" id="impactSlider">
+                            <div class="impact-slide">
+                                <span class="mini-tag">Fraud Defeated</span>
+                                <h3>RS IntelliEdge™: Real-Time Fraud Defense</h3>
+                                <p>Stop fraud before it strikes. RS IntelliEdge™ protects 1,200+ banks and 300 million daily
+                                    transactions, delivering an 80% reduction in fraud. As UPI scales, our AI-driven
+                                    interdiction ensures your digital ecosystem remains secure.</p>
+                            </div>
+                            <div class="impact-slide">
+                                <span class="mini-tag">Network Scale</span>
+                                <h3>National Payment Backbone</h3>
+                                <p>RS IntelliEdge™ integrates directly at the central switch, securing the national rail
+                                    through shared intelligence and real-time interdiction for over 1,200 participating
+                                    members.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="slider-nav">
+                        <button class="arrow-btn" onclick="moveImpactSlider(-1)">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M15 18l-6-6 6-6" />
+                            </svg>
+                        </button>
+                        <button class="arrow-btn" onclick="moveImpactSlider(1)">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M9 18l6-6-6-6" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+    
+                <div class="video-preview-box reveal delay-2">
+                    <div class="video-inner">
+                        <img src="./images/video_cover.jpg" alt="RS IntelliEdge Banks" class="thumb-img">
+                        <div class="video-overlay-ui">
+                            <div class="pulse-effect"></div>
+                            <a href="https://www.youtube.com/watch?v=QGyT1sNk7sQ" target="_blank" class="play-btn-circle">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </a>
+                            <div class="video-info">
+                                <h4>RS IntelliEdge - Banks™</h4>
+                                <p>AI-powered real-time fraud decisions (2:30)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="ecosystem-colorful" id="who">
+    <div class="eco-bg-pattern"></div>
+    <div class="container">
+        <div class="section-header-centered">
+            <span class="badge-small">Ecosystem Reach</span>
+            <h2 class="heading-large">Tailored Intelligence for <br><span>Global Leaders</span></h2>
+        </div>
+
+        <div class="eco-dual-panel">
+            <div class="eco-sidebar-glass">
+                <div class="org-scroll-list" id="orgList">
+                    </div>
+            </div>
+
+            <div class="eco-feature-card-light" id="featureCard">
+                <div class="main-feature-icon" id="mainIcon">🏛️</div>
+                <div class="slider-window">
+                    <div class="slider-track" id="featureTrack">
+                        </div>
+                </div>
+                <div class="slider-footer">
+                    <div class="dot-nav" id="dotNav"></div>
+                    <div class="eco-btn-group">
+                        <button class="eco-action-btn" onclick="moveFeature(-1)">←</button>
+                        <button class="eco-action-btn" onclick="moveFeature(1)">→</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="components">
+<div id="rs-v7-light-container">
+    <section class="v7-wrapper">
+        <div class="v7-container">
+            
+            <div class="v7-header-center">
+                <span class="v7-badge">The Ecosystem Stack</span>
+                <h2 class="v7-title">RS IntelliEdge™ <br><span class="v7-gradient">Components</span></h2>
+            </div>
+
+            <div class="v7-grid">
+                <div class="v7-sidebar">
+                    <div class="v7-scroll" id="v7-comp-menu">
+                        </div>
+                </div>
+
+                <div class="v7-card">
+                    <div class="v7-card-top">
+                        <div class="v7-icon-wrap" id="v7-active-icon">🧠</div>
+                        <span class="v7-card-tag">Core Capabilities</span>
+                    </div>
+                    
+                    <div class="v7-viewport">
+                        <div class="v7-track" id="v7-auto-track">
+                            </div>
+                    </div>
+                    <div class="v7-mask"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</section>
+<section id="insights">
+    <div id="lib-v8-insights-hub">
+    <section class="lib-v8-wrapper">
+        <div class="lib-v8-container">
+            
+            <div class="lib-v8-header">
+                <div class="lib-v8-topline">
+                    <span class="lib-v8-badge">Insights</span>
+                    <a href="#" class="lib-v8-view-all">View all articles</a>
+                </div>
+                <h2 class="lib-v8-title">Stay ahead of the <br><span class="lib-v8-gradient">threat landscape</span></h2>
+            </div>
+
+            <div class="lib-v8-grid">
+                
+                <article class="lib-v8-card">
+                    <div class="lib-v8-thumb">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800" alt="Case Study">
+                        <span class="lib-v8-type-tag">Case Study</span>
+                    </div>
+                    <div class="lib-v8-body">
+                        <h3 class="lib-v8-card-title">GenAI in Fraud Ops: Analyst Copilots</h3>
+                        <p class="lib-v8-card-text">How RAG models are reducing false positives and alert fatigue by 30% across tier-1 banks.</p>
+                    </div>
+                </article>
+
+                <article class="lib-v8-card">
+                    <div class="lib-v8-thumb">
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800" alt="White Paper">
+                        <span class="lib-v8-type-tag">White Paper</span>
+                    </div>
+                    <div class="lib-v8-body">
+                        <h3 class="lib-v8-card-title">Frictionless Security in Modern Rails</h3>
+                        <p class="lib-v8-card-text">Balancing sub-100ms security decisioning with superior end-user payment experience.</p>
+                    </div>
+                </article>
+
+                <article class="lib-v8-card">
+                    <div class="lib-v8-thumb">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800" alt="Report">
+                        <span class="lib-v8-type-tag">Report</span>
+                    </div>
+                    <div class="lib-v8-body">
+                        <h3 class="lib-v8-card-title">The Rise of Account Takeover (ATO)</h3>
+                        <p class="lib-v8-card-text">Shared intelligence strategies to defend against increasingly sophisticated cross-channel threats.</p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+</div>
+</section>
+
+<footer id="rs-isolated-footer-v10">
+    <div class="rs-final-footer-wrapper">
+        <div class="rs-final-footer-container">
+            
+            <div class="rs-final-footer-cta-block">
+                <h2 class="rs-final-footer-h2">Future-proof your fraud defenses</h2>
+                <p class="rs-final-footer-p">Join 1,200+ institutions on India's largest shared fraud intelligence network. Start protecting your rails today.</p>
+                <button class="rs-final-footer-btn" onclick="window.location.href='#contact'">Contact Sales</button>
+            </div>
+
+            <div class="rs-final-footer-bottom-row">
+                <div class="rs-final-footer-legal-group">
+                    <span class="rs-final-footer-brand-name">RS Software</span>
+                    <span class="rs-final-footer-copyright">© 2026 All rights reserved.</span>
+                </div>
+                
+                <div class="rs-final-footer-links-list">
+                    <a href="#terms" class="rs-footer-bottom-anchor">Terms</a>
+                    <a href="#privacy" class="rs-footer-bottom-anchor">Privacy</a>
+                    <a href="#security" class="rs-footer-bottom-anchor">Security</a>
+                    <a href="#contact" class="rs-footer-bottom-anchor">Contact</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<a href="#demo" id="rs-floating-demo-btn" class="rs-floating-cta">
+    <span class="rs-floating-icon">📅</span>
+    <span class="rs-floating-text">Book a Demo</span>
+</a>
+
+
+</body>
+
+    
+
+    <script>
+(function() {
+    const runCounter = () => {
+        // 1. Select all elements that have a data-target attribute
+        const counters = document.querySelectorAll('[data-target]');
+        
+        if (counters.length === 0) {
+            console.warn("Counter script: No elements with [data-target] found.");
+            return;
+        }
+
+        const animate = (el) => {
+            // Prevent multiple animations on the same element
+            if (el.classList.contains('is-animated')) return;
+            el.classList.add('is-animated');
+
+            const target = parseFloat(el.getAttribute('data-target'));
+            const duration = 2000; // 2 seconds
+            const startTime = performance.now();
+
+            const update = (now) => {
+                const elapsed = now - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                
+                // Ease-out formula
+                const easeOut = 1 - Math.pow(1 - progress, 3);
+                const current = progress === 1 ? target : target * easeOut;
+                
+                // Determine decimal places based on target (99.8 vs 100)
+                const decimals = target % 1 === 0 ? 0 : 1;
+                el.innerText = current.toFixed(decimals);
+
+                if (progress < 1) {
+                    requestAnimationFrame(update);
+                } else {
+                    el.innerText = target;
+                }
+            };
+            requestAnimationFrame(update);
+        };
+
+        // 2. The Intersection Observer Logic
+        const observerOptions = {
+            threshold: 0.05, // Trigger as soon as 5% is visible
+            rootMargin: '0px 0px -50px 0px' // Triggers slightly before it enters the viewport
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                // If it's visible OR if the user has already scrolled past it
+                if (entry.isIntersecting || entry.boundingClientRect.top < 0) {
+                    animate(entry.target);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        counters.forEach(c => observer.observe(c));
+    };
+
+    // Initialize on load and on any dynamic content changes
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', runCounter);
+    } else {
+        runCounter();
+    }
+})();
+
+
+            let currentImpactSlide = 0;
+    function moveImpactSlider(n) {
+        const track = document.getElementById('impactSlider');
+        const slides = track.querySelectorAll('.impact-slide');
+        currentImpactSlide = (currentImpactSlide + n + slides.length) % slides.length;
+        track.style.transform = `translateX(-${currentImpactSlide * 100}%)`;
+    }
+
+        const ecoData = [
+        {
+            name: "Central Infrastructure",
+            sub: "National Sovereign Layer Architecture",
+            icon: "🏛️",
+            features: [
+                { title: "Real-Time Central Interdiction", desc: "Centralized monitoring at the switch level to protect the entire national network from systemic risk." },
+                { title: "National Payment Backbone", desc: "Integrates at the central switch level for over 1,200 participating member banks." }
+            ]
+        },
+        {
+            name: "Banks & PSPS",
+            sub: "Enterprise-Grade Modular Defense",
+            icon: "🏦",
+            features: [
+                { title: "Omni-Channel Protection", desc: "Unified fraud visibility across mobile, web, and branch transactions in one view." },
+                { title: "RS IntelliEdge™ Assessment", desc: "Real-time risk assessment ensuring digital ecosystems remain secure and scalable." }
+            ]
+        },
+        {
+            name: "Developer Ecosystem",
+            sub: "REST API & Native SDK Integration",
+            icon: "💻",
+            features: [
+                { title: "Integrate in hours", desc: "Connect via REST APIs, webhooks, or native SDKs for Java, Python, and Node.js." },
+                { title: "High-Throughput Rails", desc: "Built for volume with sub-100ms decisioning for instant security results." }
+            ]
+        },
+        {
+            name: "Digital Wallets",
+            sub: "Hyper-Growth Application Security",
+            icon: "📱",
+            features: [
+                { title: "P2P Payment Security", desc: "Detecting account takeovers and behavior-based risk scoring in real-time." },
+                { title: "Device Fingerprinting", desc: "Identifying emulators and high-risk devices before fraud occurs." }
+            ]
+        },
+        {
+            name: "Microfinance",
+            sub: "Financial Inclusion Defense",
+            icon: "🌱",
+            features: [
+                { title: "Low-Value High-Volume", desc: "Optimized scoring for micro-transactions to maintain security without friction." },
+                { title: "Offline Fraud Detection", desc: "Securing transactions even in regions with intermittent connectivity." }
+            ]
+        }
+    ];
+
+    let currentOrgIdx = 0;
+    let currentFeatIdx = 0;
+
+    function initEcosystem() {
+        const orgList = document.getElementById('orgList');
+        orgList.innerHTML = ecoData.map((org, i) => `
+            <div class="org-btn-c ${i === 0 ? 'active' : ''}" onclick="selectOrg(${i}, this)">
+                <div style="font-size: 1.8rem;">${org.icon}</div>
+                <div class="info">
+                    <span class="name">${org.name}</span>
+                    <span class="sub">${org.sub}</span>
+                </div>
+            </div>
+        `).join('');
+        renderFeatures();
+    }
+
+    function selectOrg(index, element) {
+        document.querySelectorAll('.org-btn-c').forEach(btn => btn.classList.remove('active'));
+        element.classList.add('active');
+        currentOrgIdx = index;
+        currentFeatIdx = 0;
+        document.getElementById('mainIcon').innerText = ecoData[index].icon;
+        renderFeatures();
+    }
+
+    function renderFeatures() {
+        const track = document.getElementById('featureTrack');
+        const dots = document.getElementById('dotNav');
+        const activeData = ecoData[currentOrgIdx];
+
+        track.innerHTML = activeData.features.map(f => `
+            <div class="feature-item">
+                <h3>${f.title}</h3>
+                <p>${f.desc}</p>
+            </div>
+        `).join('');
+
+        dots.innerHTML = activeData.features.map((_, i) => `
+            <div class="dot ${i === 0 ? 'active' : ''}"></div>
+        `).join('');
+
+        track.style.transform = `translateX(0)`;
+    }
+
+    function moveFeature(direction) {
+        const feats = ecoData[currentOrgIdx].features;
+        currentFeatIdx = (currentFeatIdx + direction + feats.length) % feats.length;
+        document.getElementById('featureTrack').style.transform = `translateX(-${currentFeatIdx * 100}%)`;
+        const dots = document.querySelectorAll('.dot');
+        dots.forEach((dot, i) => dot.classList.toggle('active', i === currentFeatIdx));
+    }
+
+    window.onload = initEcosystem;
+
+        const v7Data = [
+        { name: "Adaptive AI Engine", sub: "Neural Risk Scoring", icon: "🧠", features: [
+            { title: "Sub-100ms Scoring", desc: "Real-time neural networks evaluate risk faster than a human eye blinks." },
+            { title: "Self-Learning Loops", desc: "Models update risk weights automatically based on fraud feedback." }
+        ]},
+        { name: "GenAI Co-Pilot", sub: "Natural Language Analyst", icon: "🤖", features: [
+            { title: "Analyst Chat", desc: "Query complex fraud data using simple conversational English." },
+            { title: "Auto-Summarization", desc: "Instant 360-degree summaries of flagged suspicious accounts." }
+        ]},
+        { name: "Rule Engine", sub: "No-Code Policy Logic", icon: "⚙️", features: [
+            { title: "Instant Deployment", desc: "Deploy new fraud rules across the network in seconds without IT." },
+            { title: "A/B Testing", desc: "Simulate rules against historical data before going live." }
+        ]},
+        { name: "Link Analysis", sub: "Network Graph Visuals", icon: "🕸️", features: [
+            { title: "Syndicate Detection", desc: "Visualizing hidden links between seemingly unrelated accounts." },
+            { title: "Ring Identification", desc: "Identify multi-node fraud rings using advanced graph theory." }
+        ]},
+        { name: "Device Trust", sub: "Hardware Fingerprinting", icon: "📱", features: [
+            { title: "Emulator Detection", desc: "Identify and block bot-driven mobile emulator attacks." },
+            { title: "Location Spoofing", desc: "Detecting GPS manipulation and proxy-based location fraud." }
+        ]},
+        { name: "Identity Vault", sub: "Biometric Verification", icon: "🆔", features: [
+            { title: "Liveness Check", desc: "Ensuring a real human is behind the transaction via camera feed." },
+            { title: "KYC Integration", desc: "Seamless cross-check with national identity databases." }
+        ]}
+    ];
+
+    function initV7() {
+        const menu = document.getElementById('v7-comp-menu');
+        menu.innerHTML = v7Data.map((item, i) => `
+            <div class="v7-tab ${i === 0 ? 'is-active' : ''}" onclick="selectV7(${i}, this)">
+                <div style="font-size:1.8rem">${item.icon}</div>
+                <div>
+                    <span class="v7-tab-name">${item.name}</span>
+                    <span class="v7-tab-sub">${item.sub}</span>
+                </div>
+            </div>
+        `).join('');
+        loadV7Feats(0);
+    }
+
+    function selectV7(idx, el) {
+        document.querySelectorAll('#rs-v7-light-container .v7-tab').forEach(t => t.classList.remove('is-active'));
+        el.classList.add('is-active');
+        document.getElementById('v7-active-icon').innerText = v7Data[idx].icon;
+        loadV7Feats(idx);
+    }
+
+    function loadV7Feats(idx) {
+        const track = document.getElementById('v7-auto-track');
+        const feats = v7Data[idx].features;
+        track.innerHTML = [...feats, ...feats, ...feats].map(f => `
+            <div class="v7-item">
+                <h3>${f.title}</h3>
+                <p>${f.desc}</p>
+            </div>
+        `).join('');
+    }
+
+    window.addEventListener('DOMContentLoaded', initV7);
+
+    (function() {
+        window.addEventListener('scroll', function() {
+            const btn = document.getElementById('rs-floating-demo-btn');
+            if (btn) {
+                // Change '200' to control how far down the user must scroll
+                if (window.scrollY > 200) {
+                    btn.classList.add('show-btn');
+                } else {
+                    btn.classList.remove('show-btn');
+                }
+            }
+        });
+    })();
+        
+    </script>
+</body>
+</html>
