@@ -32,17 +32,30 @@
         }
 
         /* --- Transparent Nav with White Text --- */
-        nav {
-            width: 100%;
-            padding: 30px 80px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 100;
-        }
+nav {
+    width: 100%;
+    padding: 30px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    /* Fixed keeps it on screen while scrolling */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: transparent;
+    /* Start transparent */
+    transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+/* This is the class the JavaScript will trigger */
+nav#mainNav.scrolled {
+    background-color: #002255 !important;
+    /* Force Dark Blue */
+    padding: 15px 80px;
+    /* Optional: Shrink height on scroll */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
 
         
 
@@ -359,7 +372,7 @@
         position: relative;
     }
 
-    .container { max-width: 1200px; margin: 0 auto; }
+    .container { max-width: 80%; margin: 0 auto; }
 
     /* Center-Aligned Header */
     .impact-header-center {
@@ -726,7 +739,7 @@
         display: flex; 
         flex-direction: column; 
         gap: 40px; 
-        animation: v7Scroll 22s linear infinite; 
+        animation: v7Scroll 50s linear infinite; 
     }
 
     #rs-v7-light-container .v7-item h3 { font-size: 2.2rem; font-weight: 800; color: #0f172a; margin-bottom: 10px; }
@@ -1068,3 +1081,560 @@ div[id] {
             font-size: 2.2rem;
         }
     }
+
+    /* Responsive video part */
+    /* Color Palette & Base */
+:root {
+    --bg-dark: #0b1120;
+    --card-bg: #151c2c;
+    --primary-blue: #00aeef;
+    --text-muted: #94a3b8;
+}
+
+.impact-section-dark {
+    background-color: var(--bg-dark);
+    padding: 100px 0;
+    font-family: 'Inter', sans-serif; /* Recommended font for this look */
+    color: #ffffff;
+}
+
+/* Header Styling */
+.impact-header-center {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.impact-title-main {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-top: 10px;
+}
+
+.text-gradient {
+    background: linear-gradient(90deg, #57c1eb, #7d91f8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Grid & Responsiveness */
+.impact-layout-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+/* Glass Card Styling (Left Side) */
+.slider-card-glass {
+    background: var(--card-bg);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 40px; /* Matching the rounded look in image */
+    padding: 60px 50px;
+    position: relative;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.mini-tag {
+    background: rgba(0, 174, 239, 0.1);
+    color: var(--primary-blue);
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.impact-slide h3 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    margin: 25px 0 15px;
+}
+
+.impact-slide p {
+    color: var(--text-muted);
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+/* Video Card (Right Side) */
+.video-preview-box {
+    border-radius: 40px;
+    overflow: hidden;
+    position: relative;
+    aspect-ratio: 16/9;
+}
+
+.video-overlay-ui {
+    background: linear-gradient(transparent 50%, rgba(0,0,0,0.8));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 30px;
+}
+
+.play-btn-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+    background: var(--primary-blue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 30px rgba(0, 174, 239, 0.4);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .impact-layout-grid {
+        grid-template-columns: 1fr;
+    }
+    .impact-title-main { font-size: 2.5rem; }
+}
+
+@media (max-width: 768px) {
+    .slider-card-glass { padding: 40px 25px; border-radius: 30px; }
+    .video-preview-box { border-radius: 30px; }
+    .impact-slide h3 { font-size: 1.6rem; }
+}
+
+/* ecosystem reach */
+
+:root {
+    --primary-blue: #00a8e8;
+    --accent-purple: #8e44ad;
+    --text-dark: #1a1a2e;
+    --glass-bg: rgba(255, 255, 255, 0.8);
+}
+
+.ecosystem-colorful {
+    padding: 80px 0;
+    background: #f8faff;
+    font-family: 'Inter', sans-serif;
+}
+
+.section-header-centered {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.heading-large span {
+    background: linear-gradient(90deg, var(--primary-blue), var(--accent-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Layout Container */
+.eco-dual-panel {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+/* Sidebar List */
+.eco-sidebar-glass {
+    background: white;
+    border-radius: 24px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.org-item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 12px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 2px solid transparent;
+}
+
+.org-item.active {
+    border-color: var(--primary-blue);
+    background: #f0f9ff;
+}
+
+.org-icon { font-size: 24px; margin-right: 15px; }
+.org-info h4 { margin: 0; font-size: 16px; color: var(--primary-blue); }
+.org-info p { margin: 0; font-size: 13px; color: #666; }
+
+/* Feature Card (Right Side) */
+.eco-feature-card-light {
+    background: white;
+    border-radius: 30px;
+    padding: 60px;
+    position: relative;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.04);
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-feature-icon {
+    position: absolute;
+    top: 40px; right: 40px;
+    font-size: 80px;
+    opacity: 0.05;
+}
+
+.slider-window { overflow: hidden; }
+.slider-track {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.feature-slide {
+    min-width: 100%;
+}
+
+.feature-slide h3 { font-size: 42px; margin-bottom: 20px; color: var(--text-dark); }
+.feature-slide p { font-size: 18px; color: #555; line-height: 1.6; max-width: 80%; }
+
+/* Navigation */
+.slider-footer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dot-nav { display: flex; gap: 8px; }
+.dot {
+    width: 12px; height: 6px;
+    background: #ddd;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.dot.active { width: 24px; background: var(--primary-blue); }
+
+.eco-action-btn {
+    width: 45px; height: 45px;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    background: white;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: 0.2s;
+}
+
+.eco-action-btn:hover { background: #f0f0f0; }
+
+/* Responsive Media Query */
+@media (max-width: 992px) {
+    .eco-dual-panel { grid-template-columns: 1fr; }
+    .eco-sidebar-glass { max-height: 300px; order: 2; }
+    .eco-feature-card-light { padding: 40px; order: 1; }
+    .feature-slide h3 { font-size: 28px; }
+}
+
+
+/*ecosystem reach */
+:root {
+    --brand-blue: #0075b7;
+    --cyan-cta: #00d4ff;
+    --text-dark: #101828;
+    --text-gray: #475467;
+}
+
+/* Base and Layout */
+.ecosystem-section {
+    padding: 80px 40px;
+    background-image: radial-gradient(#d1d5db 0.8px, transparent 0.8px);
+    background-size: 24px 24px;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+}
+
+.main-heading {
+    font-size: 48px;
+    font-weight: 900;
+    font-style: italic; /* Match design italicization */
+    text-align: center;
+    color: var(--text-dark);
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #00adef, #9333ea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-grid {
+    display: flex;
+    gap: 24px;
+    max-width: 1100px;
+    margin: 40px auto;
+    height: 550px; /* Lock height to force scrolling */
+}
+
+/* Left Scroller */
+.institution-scroller {
+    flex: 0 0 320px;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+.institution-scroller::-webkit-scrollbar { display: none; }
+
+.nav-card {
+    background: #fff;
+    border: 1px solid #eaecf0;
+    border-radius: 20px;
+    padding: 24px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-card.active {
+    border: 2px solid var(--brand-blue);
+    box-shadow: 0px 4px 20px rgba(0, 117, 183, 0.1);
+}
+
+.nav-card.active h3 {
+    color: var(--brand-blue);
+    font-style: italic; /* Match left card active text */
+}
+
+/* Right Viewer */
+.feature-viewer {
+    flex: 1;
+    background: #fff;
+    border: 1px solid #eaecf0;
+    border-radius: 32px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.feature-scroll-content {
+    overflow-y: auto;
+    flex-grow: 1;
+    padding-bottom: 40px;
+}
+
+.feature-title {
+    font-size: 44px;
+    font-weight: 800;
+    font-style: italic; /* Bold Italic as per design */
+    color: var(--text-dark);
+    margin-bottom: 24px;
+}
+
+.feature-desc {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--text-gray);
+}
+
+/* Floating Button Style */
+.book-demo-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: var(--cyan-cta);
+    border: none;
+    border-radius: 18px; /* Slightly rectangular rounded corners */
+    padding: 14px 24px;
+    font-weight: 700;
+    font-style: italic;
+    color: #000;
+    box-shadow: 0 10px 25px rgba(0, 212, 255, 0.3);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 850px) {
+    .main-grid { flex-direction: column; height: auto; }
+    .institution-scroller { height: 250px; }
+}
+
+
+
+/* feature card */
+/* Ensure the main grid doesn't expand beyond the viewport */
+.dual-container {
+    display: flex;
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 520px; 
+    width: 100%; /* Force it to stay within bounds */
+    align-items: stretch;
+}
+
+/* The Viewport MUST have overflow hidden to clip the extra features */
+.feature-viewport {
+    flex: 2;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 32px;
+    padding: 60px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* CRITICAL: This stops the card from expanding */
+    min-width: 0; /* Prevents flex children from bulging */
+}
+
+/* The Tray holds the features in a row */
+.feature-tray {
+    display: flex;
+    transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    width: 100%; 
+    height: 100%;
+}
+
+/* Each slide must be exactly 100% of the viewport width */
+.feature-slide {
+    min-width: 100%; 
+    max-width: 100%;
+    flex-shrink: 0; /* Prevents slides from squishing */
+    text-align: left;
+}
+
+/* --- Core Responsive Layout --- */
+.eco-dual-panel {
+    display: flex;
+    gap: 30px;
+    height: 520px; /* Uniform height for desktop */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: stretch;
+}
+
+/* --- Left Side: Vertical Institution Slider --- */
+.eco-sidebar-glass {
+    flex: 1;
+    min-width: 300px;
+    height: 100%;
+}
+
+.org-scroll-list {
+    height: 100%;
+    overflow-y: auto;
+    scrollbar-width: none; /* Hide scrollbar for clean corporate look */
+}
+.org-scroll-list::-webkit-scrollbar { display: none; }
+
+/* --- Right Side: Horizontal Feature Card --- */
+.eco-feature-card-light {
+    flex: 2;
+    background: #fff;
+    border-radius: 32px;
+    padding: 60px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* CRITICAL FIXES FOR WIDTH ISSUE */
+    min-width: 0; 
+    overflow: hidden; 
+}
+
+.slider-window {
+    width: 100%;
+    overflow: hidden;
+    flex: 1;
+}
+
+.slider-track {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* Individual Feature Slide */
+.feature-slide {
+    min-width: 100%; /* Force slide to be exact width of the card */
+    max-width: 100%;
+    flex-shrink: 0; /* Stop slides from squishing */
+    padding-right: 20px;
+}
+
+/* --- Mobile Responsiveness (Media Queries) --- */
+@media (max-width: 992px) {
+    .eco-dual-panel {
+        flex-direction: column;
+        height: auto; /* Allow height to expand on mobile */
+    }
+
+    .eco-sidebar-glass {
+        height: 300px; /* Fixed height for the vertical list on mobile */
+        margin-bottom: 20px;
+    }
+
+    .eco-feature-card-light {
+        padding: 40px 20px;
+        height: 450px;
+    }
+
+    .heading-large {
+        font-size: 32px;
+    }
+}
+
+/* This targets the track when its parent container is hovered */
+.v7-card:hover .v7-track, 
+#v7-auto-track:hover {
+    animation-play-state: paused;
+    cursor: pointer; /* Optional: indicates the item is interactive */
+}
+
+
+@keyframes scroll-v7 {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-100%); }
+}
+
+/* nav new */
+/* Initial Transparent State */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 4rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent !important; /* Force transparent at start */
+    transition: all 0.4s ease;
+    z-index: 9999; /* Ensure it stays on top of everything */
+}
+
+/* This is the class the JavaScript will toggle */
+nav.scrolled {
+    background-color: #0a192f !important; /* Dark Blue - forced with important */
+    padding: 1rem 4rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-links { display: flex; align-items: center; gap: 2.5rem; }
+.nav-links a { color: #ffffff; text-decoration: none; font-weight: 500; }
+
+.btn-nav {
+    background: #ffffff;
+    color: #05070a;
+    padding: 0.75rem 1.8rem;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+}
