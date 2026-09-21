@@ -1638,3 +1638,25 @@ nav.scrolled {
     font-weight: 700;
     text-decoration: none;
 }
+
+/* Target Kapa modal header title and prepends the logo */
+  [class*="kapa-modal"] header h2,
+  [id*="kapa-widget"] header h2,
+  .kapa-modal-header-title {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+  }
+
+  [class*="kapa-modal"] header h2::before,
+  [id*="kapa-widget"] header h2::before,
+  .kapa-modal-header-title::before {
+    content: "" !important;
+    display: inline-block !important;
+    width: 28px !important;
+    height: 28px !important;
+    background-image: url('https://rssoftware.ai/asset/images/logo_with_name.png') !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+  }
